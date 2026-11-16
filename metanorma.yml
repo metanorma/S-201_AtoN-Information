@@ -1,0 +1,9 @@
+---
+metanorma:
+  source:
+    files:
+      - sources/main-document/document.adoc
+
+  collection:
+    organization: "IALA: International Organization for Marine Aids to Navigation"
+    name: "S-201 Aids to Navigation Information"

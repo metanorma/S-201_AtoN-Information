@@ -1,0 +1,25 @@
+== Coordinate Reference Systems (CRS)
+
+=== Introduction
+
+The single coordinate reference system is separated into the horizontal and vertical components.
+
+=== Horizontal Geodetic Datum
+
+WGS84 (World Geodetic System of 1984) must be used for the horizontal reference system for spatial data.
+
+=== Vertical Datum
+
+Vertical datum shall be selected from the list in verticalDatum enumeration. If the local datum value is used, additional information must be provided using the comment attribute in the metadata, or information attribute on the feature instance. Positive value is above vertical datum and negative is below vertical datum.
+
+=== Units of Measure
+
+Units of measure for S-201 datasets must be as follows:
+
+* For height, depth and vertical length it must be metres.
+* For range it must be nautical miles.
+* For orientation it must be degrees.
+* For signal duration it must be seconds.
+* For audible signal output it must be decibel.
+* For signal frequency it must be Hertz.
+* For intensity of light it must be candela.

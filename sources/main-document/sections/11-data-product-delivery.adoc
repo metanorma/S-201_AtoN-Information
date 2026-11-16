@@ -1,0 +1,127 @@
+== Data Product Delivery
+
+This clause specifies the encoding and delivery mechanisms for an S-201 dataset. Data which conforms to this product specification must be delivered by means of an exchange set.
+
+.Data product delivery
+[cols="1,2,2",options="header"]
+|===
+| Name | ISO 19131 Elements | Value
+
+| Format name | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.formatName | GML footnote:[GML is an XML encoding for the transport and storage of geographic information, including both the geometry and the properties of geographic features, between distributed systems. The XML Schema for the GML application schema is provided in a schema document S-201 Data Product Format Schemas – Annex B.xsd which imports other schema(s) defining common types. These files are available in the IHO Geospatial Information Registry. Feature instances must validate against S-201 Data Product Format Schemas – Annex B.xsd and conform to all other requirements specified in this data product specification, including all constraints not captured in the XML Schema document.]
+| Version | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.version | 3.2.1
+| Specification description | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.specification | GML footnote:[GML is an XML encoding for the transport and storage of geographic information, including both the geometry and the properties of geographic features, between distributed systems. The XML Schema for the GML application schema is provided in a schema document S-201 Data Product Format Schemas – Annex B.xsd which imports other schema(s) defining common types. These files are available in the IHO Geospatial Information Registry. Feature instances must validate against S-201 Data Product Format Schemas – Annex B.xsd and conform to all other requirements specified in this data product specification, including all constraints not captured in the XML Schema document.]
+| Language | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.language | English
+| Character set | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.characterSet > MD_CharacterSetCode | 004 – utf8
+|===
+
+=== Exchange set
+
+S-201 datasets are grouped into exchange sets. Each exchange set consists of one or more AtoN Information datasets with an associated XML metadata file and a single Exchange Catalogue XML file (CATALOG.XML) containing metadata. It may also include one or more support files.
+
+[cols="1,3",options="header"]
+|===
+| Item | Value
+
+h| Units of Delivery | Exchange Set
+h| Transfer Size | Unlimited
+h| Medium Name | Digital data delivery
+|===
+
+Each dataset must be contained in a physically separate, uniquely identified file on the transfer medium.
+
+Each exchange set has a single exchange catalogue which contains the discovery metadata for each dataset and references to any support files.
+
+Support files are supplementary information which are linked to the features and information types by attributes. The attributes containing these links are described in the application schema and feature catalogue.
+
+An exchange set may be encapsulated into a form suitable for transmission by a mapping called a transmission encoding. An encoding translates each of the elements of the exchange set into a logical form suitable for writing to media and for transmission online. An encoding may also define other elements in addition to the exchange set contents (i.e., media identification, data extents etc.) and also may define commercial constructs such as encryption and compression methods.
+
+If the data is transformed (e.g., for encryption or compression purposes) its content must not be changed. Digital signature and data security should be covered by a Memorandum of Understanding between involved parties.
+
+This product specification does not define the transmission encoding which must be used as a default for transmission of data between parties.
+
+The exchange set elements are as follows:
+
+*Mandatory Elements*
+
+* AtoN datasets – GML encoding of features/attributes and their associated geometry and metadata.
+* Exchange Catalogue – the XML encoded representation of exchange set catalogue features [discovery metadata].
+
+*Optional Elements*
+
+* Supplementary files – These are contained within the exchange set as files and the map from the name included within the dataset and the physical location on the media is defined within the Exchange Catalogue.
+* Feature Catalogue – If it is necessary to deliver the latest feature catalogue to the end user it may be done using the S-201 exchange set mechanism for datasets – i.e., include the updated feature catalogue in an exchange set.
+* Portrayal Catalogue - If it is necessary to deliver the latest portrayal catalogue to the end user it may be done using the S-201 exchange set mechanism for datasets – i.e., include the updated feature catalogue in an exchange set.
+
+=== Datasets
+
+Datasets are distributed as files which are part of exchange sets structured as described in this specification. The distribution media are left to the discretion of the producer and distributor.
+
+The following types of dataset files may be produced and contained within an exchange set:
+
+* New dataset and new edition of a dataset (base dataset): Each new edition of a dataset must have the same name as the dataset that it replaces. A new edition can also be AtoN data that has previously been produced for this area.
+* Cancellation: The dataset is cancelled and is deleted from the system. The structure for a cancellation is described in clause 11.5.
+
+=== Dataset size
+
+Datasets should not exceed 50 MB.
+
+=== Dataset file naming
+
+Dataset files shall be named
+
+----
+201CCCCXXXXXXXX_EEE.GML
+----
+
+The file name forms a unique identifier where:
+
+* The first three characters are always "201" and identify the dataset as an S-201 dataset.
+* CCCC – the next four characters identify the issuing agency by its alphanumeric agency code in the IHO producer code register in the IHO GI Registry (i.e., the IHO is identified as "AA", not "1810"). Where the agency code consists of fewer than four characters, sufficient zeros must be suffixed to make the length exactly four characters (e.g., "AA00" for IHO).
+* XXXXXXXX – the next eight characters may be used in any way by the producer to provide the unique file name.
+* EEE – new (first) editions use 000, and increment until a limit of 999 (mandatory).
+* GML – the character sequence "GML" or "gml".
+* The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore).
+
+=== Cancellations
+
+Cancellation should be in line with the functionality documented in S-100 Ed 5.2. Where a dataset is cancelled and its name is reused at a later date, the issue date must be greater than the issue date of the cancelled dataset. When the dataset is cancelled, it must be removed from the system.
+
+=== Support Files
+
+Dataset support files offer supplementary information that can be included in an exchange set.
+
+Support files may be in any of the support file formats defined in the S-100 enumeration S100_SupportFileFormat (defined in Part 17) except that "Other" may not be used.
+
+=== Support File Naming
+
+All support files must have unique universal file identifiers. The file identifier of support information should not be used to describe the physical content of the file. The support file metadata that accompanies the file will inform the user of the name and purpose of the file.
+
+In this encoding the support files are named according to the specifications given below:
+
+----
+201CCCCXXXXXXXX.EEE
+----
+
+The main part forms an identifier where:
+
+* The first three characters are always "201" and identify the dataset as an S-201 dataset.
+* CCCC – the next four characters identify the issuing agency by its alphanumeric agency code in the IHO producer code register in the IHO GI Registry (i.e., the IHO is identified as "AA", not "1810"). Where the agency code consists of fewer than four characters, sufficient zeros must be suffixed to make the length exactly four characters (e.g., "AA00" for IHO).
+* XXXXXXXX – the next eight characters can be used in any way by the producer to provide the unique file name. It is not required to use all characters.
+* .EEE – support file extension (Must conform to the file format.)
+* The following characters are allowed in the support file name, A to Z, 0 to 9 and the special character _ (underscore)
+
+=== Support file management
+
+When a support file is created, or a subsequent version is issued, it must carry its own issue date and be supported with a digital signature which authenticates it against the producer's public key included in the exchange set metadata.
+
+The type of support file is indicated in the "purpose" field of the discovery metadata. Support files carrying the "deletion" flag must be removed from the system. When a feature pointing to a text, picture or application file is deleted or updated so that it no longer references the file, the system software must check to see whether any other feature referenced the same file, before that file is deleted.
+
+Each support file must be used only once in the exchange set.
+
+Support files should be stored in a separate folder within the exchange set.
+
+=== Exchange Catalogue
+
+The exchange catalogue acts as the table of contents for the exchange set. The catalogue file of the exchange set must be named CATALOG.XML. No other file in the exchange set may be named CATALOG.XML. The contents of the exchange catalogue are described in S-100 Part 17.
+
+XML schemas for the exchange catalogue are located at http://registry.iho.int/

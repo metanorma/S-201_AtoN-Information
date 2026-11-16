@@ -1,0 +1,15 @@
+== copyright-statement
+
+© Copyright International Organization for Marine Aids to Navigation (IALA) {{ docyear }}
+
+== license-statement
+
+== feedback-statement
+
+Published by the +
+International Organization for Marine Aids to Navigation (IALA) +
+10, rue des Gaudines +
+78100 Saint Germain en Laye, France +
+Tel: +33 1 34 51 70 01 +
+Fax: +33 1 34 51 82 05 +
+link:https://www.iala.int[www.iala.int] +
