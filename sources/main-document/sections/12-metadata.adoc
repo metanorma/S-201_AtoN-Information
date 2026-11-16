@@ -1,0 +1,25 @@
+== Metadata
+
+=== Introduction
+
+The metadata description is based on the S-100 metadata document section, which is a profile of the ISO 19115 standard. These documents provide a structure for describing digital geographic data and define metadata elements, a common set of metadata terminology, definitions and extension procedures.
+
+The realisation of exchange set classes, the exchange set catalogue, and the structure of exchange sets are the same as in S-100.
+
+Since the class S100_DatasetDiscoveryMetadata aggregates ISO 19115 metadata (class S100_19115DatasetMetadata), metadata conforming to ISO 19115 is required to be included. Metadata for each support file is required if the exchange set contains support files.
+
+=== Metadata classes
+
+Details for the S-100 metadata classes are depicted in S-100 Part 17.
+
+==== S100_ExchangeCatalogue
+
+Each Exchange Set has a single S100_ExchangeCatalogue which contains meta information for the data and support files in the Exchange Set.
+
+==== S-201 specific Data Set Discovery Metadata
+
+S-201 DataSetDiscoveryMetadata does not include updateNumber, updateApplicationDate, navigationPurpose.
+
+The attribute notForNavigation must be set to True.
+
+The attribute issueTime is a mandatory attribute in S-201 (optional in S-100)

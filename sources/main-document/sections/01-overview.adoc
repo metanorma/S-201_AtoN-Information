@@ -1,0 +1,108 @@
+== Overview
+
+=== Introduction
+
+The Aids to Navigation (AtoN) Information Product Specification provides a common structure for the exchange of information about AtoNs including metadata like maintenance schedules, equipment type such as battery and bulb types. This includes buoys, beacons, racons, lights, sound signals and AIS. The product contains the positions, properties, operational status and general comments related to an AtoN.
+
+The Product Specification can be used to exchange AtoN information in a consistent form between Lighthouse Authorities, Hydrographic Offices and other organisations to include commercial and professional agencies. S-201 is not intended to be for navigation systems like ECDIS, and therefore is not constrained by ECDIS requirements. This means that S-201 can include additional information to inform about AtoN services that would not be appropriate in a navigation system, such as AtoN fixing method, moorings and power source.
+
+=== References
+
+==== Normative references
+
+* IHO S-100 IHO Universal Hydrographic Data Model, Edition 5.2.0, June 2024
+* ISO 8601:2004 Data elements and interchange formats _ Information interchange _ Representation of dates and times
+* ISO/TS 19103:2005 Geographic information - Conceptual schema language
+* ISO 19111:2003 Geographic information - Spatial referencing by coordinates
+* ISO 19115-1:2014 Geographic information – Metadata (Tech Corr. 1, 2006)
+* ISO 19131:2007 Geographic information - Data product specifications
+* ISO/IEC 19505-1:2012, Information technology — Open Distributed Processing - Unified Modelling Language Version 2.4.1
+* ISO 3166-1 Country Codes
+
+==== Informative references
+
+* ISO, 2006. ISO 19109 Geographic Information - Rules for Application Schema.
+* ISO, 2007. ISO 19135 Geographic Information – Procedures for Item Registration.
+* ISO, 2009. ISO 19136 Geographic Information - Geography Markup Language (GML).
+* IMO, 2008. Safety of Navigation Circular SN/Circ.243
+* IALA, 2012. Guideline 1088 on an Introduction to Preparing S-100 Product Specifications
+
+=== Terms, definitions and abbreviations
+
+==== Terms and definitions
+
+Terms and definitions have been taken from the normative references cited in clause 1.2.1.
+
+==== Acronyms
+
+[cols="1,3",options="header"]
+|===
+| Acronym | Expansion
+
+| ASCII | American Standard Code for Information Interchange
+| AtoN | Aids to Navigation
+| CRS | Coordinate Reference System
+| ECDIS | Electronic Chart Display and Information System
+| EPSG | European Petroleum Survey Group
+| ENC | Electronic Navigational Chart
+| GML | Geography Markup Language
+| HTML | Hypertext Markup Language
+| IALA | International Organization for Marine Aids to Navigation
+| IHO | International Hydrographic Organization
+| IMO | International Maritime Organization
+| ISO | International Organization for Standardization
+| TIFF | Tag Image File Format
+| XML | Extensible Markup Language
+| XSD | XML Schema Definition
+| XSLT | eXtensible Stylesheet Language
+|===
+
+=== Product specification metadata
+
+[cols="1,3",options="header"]
+|===
+| Item | Value
+
+h| Title | Aids to Navigation Product Specification
+h| Version | 2.0.0
+h| Identifier | S-201
+h| S-100 version | 5.2.0
+h| Date | 19 May 2025
+h| Language | English
+h| Classification | 001 - unclassified
+h| Contact | IALA, 10, rue des Gaudines, 78100 Saint Germain en Laye, France. Telephone: +33 1 34 51 70 01, Fax: +33 1 34 51 82 05
+h| URL | www.iala.int
+h| Maintenance | The product specification is maintained by IALA and amendments are performed on a needs base, up to maximum of one new release per calendar year.
+|===
+
+==== IALA Product Specification Maintenance
+
+This section details the process of maintaining this document.
+
+===== Introduction
+
+Changes to this product specification will be released by IALA as a new edition, revision, or clarification.
+
+===== New Edition
+
+New editions of this product specification introduce significant changes. New editions enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types.
+
+===== Revisions
+
+Revisions are defined as substantive semantic changes to a product specification. Typically, revisions will change a product specification to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A revision must not be classified as a clarification. Revisions could have an impact on either existing users or future users of a product specification. All cumulative clarifications must be included with the release of approved corrections.
+
+Changes in a revision are minor and ensure backward compatibility with the previous versions within the same edition. Newer revisions, for example, introduce new features and attributes. Within the same edition, a data product of one version could always be processed with a later version of the feature and portrayal catalogues.
+
+===== Clarification
+
+Clarifications are non-substantive changes to this product specification. Typically, clarifications: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics, spelling, punctuation and grammar. A clarification must not cause any substantive semantic change to a product specification.
+
+Changes in a clarification are minor and ensure backward compatibility with the previous versions within the same edition. Within the same edition, a data product of one clarification version could always be processed with a later version of the feature and portrayal catalogues, and a portrayal catalogue can always rely on earlier versions of the feature catalogues.
+
+===== Version Numbers
+
+The associated version control numbering to identify changes (n) to this product specification will be as follows:
+
+* New editions denoted as n.0.0
+* Revisions denoted as n.n.0
+* Clarifications denoted as n.n.n

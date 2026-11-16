@@ -1,0 +1,9 @@
+== Data Maintenance
+
+=== Introduction
+
+Datasets are replaced by new editions that must be considered a whole replacement of the previous version. Delta change datasets are not permitted. Updates and Reissues are not used in S-201. Each edition of a dataset shall have an edition number that is greater than the previous version by one. First edition of a dataset shall have edition number set to 1.
+
+=== Maintenance and Update Frequency
+
+Datasets are maintained as needed in accordance with data producer policy.
