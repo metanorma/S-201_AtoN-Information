@@ -1,0 +1,15 @@
+[appendix]
+== Companion data products
+
+This specification is accompanied by the following data products, which are distributed as machine-readable artifacts and are not re-encoded as prose in this repository.
+
+[cols="1,2,3",options="header"]
+|===
+| Artifact | File | Description
+
+| Annex A – DCEG | `3. S-201 DCEG - Annex A.doc` | The Data Classification and Encoding Guide has been developed to produce consistent and standardized instructions for encoding S-201 datasets.
+| Annex B – Data Product Format, Schemas | `4. S-201 Data Product Format Schemas - Annex B.xsd` | This package contains the S-100 Part 10b compliant GML schemas for the specification of the data product encoding for S-201 datasets.
+| Annex C1 – Feature Catalogue | `5. S-201 Feature Catalogue - Annex C1.docx` | This package is generated from the accompanying XML S-201 feature catalogue and presents the feature catalogue in a reader-friendly form. In its current form, it is intended to facilitate reviews of the content of the XML feature catalogue.
+| Annex C2 – Feature Catalogue XML | `6. S-201 Feature Catalogue - Annex C2.xml` | The package contains the S-201 feature catalogue in a machine-readable XML format, which complies with the IHO S-100 feature catalogue schema. This document is meant for use by systems that are intended to read/write S-201 datasets.
+| Annex D – Portrayal Catalogue | `7. S-201 Portrayal Catalogue - Annex D.zip` | The package contains the S-201 portrayal catalogue.
+|===

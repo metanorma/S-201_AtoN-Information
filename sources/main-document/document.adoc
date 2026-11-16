@@ -1,0 +1,44 @@
+= Aids to Navigation Information Product Specification
+:subtitle: IALA AtoN Information Product Specification
+:series: S
+:docnumber: 201
+:doctype: standard
+:edition: 2.0.0
+:language: en
+:published-date: 2025-05-19
+:copyright-year: 2025
+:copyright-holder: IALA
+:publisher: IALA
+:boilerplate-authority: boilerplate-iala.adoc
+:toclevels: 3
+:mn-document-class: iho
+:mn-output-extensions: html,pdf
+:imagesdir: images
+
+include::sections/00-revisions.adoc[]
+
+include::sections/01-overview.adoc[]
+
+include::sections/02-specification-scope.adoc[]
+
+include::sections/03-data-product-identification.adoc[]
+
+include::sections/04-data-content-and-structure.adoc[]
+
+include::sections/05-crs.adoc[]
+
+include::sections/06-data-quality.adoc[]
+
+include::sections/07-data-capture-and-classification.adoc[]
+
+include::sections/08-data-maintenance.adoc[]
+
+include::sections/09-portrayal.adoc[]
+
+include::sections/10-data-product-format.adoc[]
+
+include::sections/11-data-product-delivery.adoc[]
+
+include::sections/12-metadata.adoc[]
+
+include::sections/13-companion-documents.adoc[]
