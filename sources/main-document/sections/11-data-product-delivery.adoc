@@ -1,7 +1,10 @@
 == Data Product Delivery
 
+=== Introduction
+
 This clause specifies the encoding and delivery mechanisms for an S-201 dataset. Data which conforms to this product specification must be delivered by means of an exchange set.
 
+[[tab-data-product-delivery]]
 .Data product delivery
 [cols="1,2,2",options="header"]
 |===
@@ -18,14 +21,9 @@ This clause specifies the encoding and delivery mechanisms for an S-201 dataset.
 
 S-201 datasets are grouped into exchange sets. Each exchange set consists of one or more AtoN Information datasets with an associated XML metadata file and a single Exchange Catalogue XML file (CATALOG.XML) containing metadata. It may also include one or more support files.
 
-[cols="1,3",options="header"]
-|===
-| Item | Value
-
-h| Units of Delivery | Exchange Set
-h| Transfer Size | Unlimited
-h| Medium Name | Digital data delivery
-|===
+*Units of Delivery*:: Exchange Set
+*Transfer Size*:: Unlimited
+*Medium Name*:: Digital data delivery
 
 Each dataset must be contained in a physically separate, uniquely identified file on the transfer medium.
 

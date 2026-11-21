@@ -3,6 +3,8 @@
 
 This specification is accompanied by the following data products, which are distributed as machine-readable artifacts and are not re-encoded as prose in this repository.
 
+[[tab-companion-data-products]]
+.Companion data products
 [cols="1,2,3",options="header"]
 |===
 | Artifact | File | Description

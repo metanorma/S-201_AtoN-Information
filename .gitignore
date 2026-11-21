@@ -10,3 +10,6 @@ sources/main-document/document.presentation.xml
 sources/main-document/document.asciidoc.log.txt
 sources/main-document/relaton
 sources/main-document/*.tmp
+
+# local bundle cache (container builds with BUNDLE_PATH=vendor/linux-bundle)
+vendor/
