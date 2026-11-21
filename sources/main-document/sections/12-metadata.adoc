@@ -17,7 +17,13 @@ Metadata for each support file is required if the exchange set contains support 
 
 === Metadata classes
 
+<<<<<<< HEAD
 Details for the S-100 metadata classes are depicted in <<IHOS100,part=17>>.
+=======
+==== Introduction
+
+Details for the S-100 metadata classes are depicted in S-100 Part 17.
+>>>>>>> 39d4af2 (Pin the document URN and re-encode untitled tables per the S-102 contract)
 
 ==== S100_ExchangeCatalogue
 
