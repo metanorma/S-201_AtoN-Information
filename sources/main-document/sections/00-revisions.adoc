@@ -3,6 +3,9 @@
 
 Revisions to the IALA Document are to be noted in the table prior to the issue of a revised document.
 
+[%unnumbered]
+[[tab-document-revisions]]
+.Document Revisions
 |===
 | Date | Page / Section Revised | Requirement for Revision
 

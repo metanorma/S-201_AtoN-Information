@@ -4,14 +4,9 @@
 
 The GML encoding of S-201 datasets is based on the S-100 profile of GML 3.2.1. This is described in S-100 Edition 5.2.0 Part 10b.
 
-[cols="1,3",options="header"]
-|===
-| Item | Value
-
-h| Format Name | GML
-h| Specification | S-100 profile of GML Part 10b
-h| File Name | S-201 Data Product Format Schemas - Annex B
-|===
+*Format Name*:: GML
+*Specification*:: S-100 profile of GML Part 10b
+*File Name*:: S-201 Data Product Format Schemas - Annex B
 
 === Encoding of Latitude and Longitude
 

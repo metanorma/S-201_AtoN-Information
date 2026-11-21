@@ -79,17 +79,12 @@ image::figure-15.png[Meta features application schema]
 
 The Feature Catalogue describes the feature types, information types, attributes, attribute values, associations and roles which may be used in the product. It also assigns the geometric primitives. The S-201 Feature Catalogue is available in an XML document which conforms to the S-100 XML Feature Catalogue Schema and can be downloaded from the IALA website (iala.int). The feature catalogue is provided in Annex C2.
 
-[cols="1,3",options="header"]
-|===
-| Item | Value
-
-h| Name | Aids to Navigation Information Feature Catalogue
-h| Scope | Ocean, Coastal, Ports, Harbours and Inland waters
-h| Version Number | 2.0.0
-h| Version Date | 2025-05-19
-h| Producer | IALA, 10, rue des Gaudines, 78100 Saint Germain en Laye, France. Telephone: +33 1 34 51 70 01, Fax: +33 1 34 51 82 05, URL: https://www.iala.int
-h| Language | English
-|===
+*Name*:: Aids to Navigation Information Feature Catalogue
+*Scope*:: Ocean, Coastal, Ports, Harbours and Inland waters
+*Version Number*:: 2.0.0
+*Version Date*:: 2025-05-19
+*Producer*:: IALA, 10, rue des Gaudines, 78100 Saint Germain en Laye, France. Telephone: +33 1 34 51 70 01, Fax: +33 1 34 51 82 05, URL: https://www.iala.int
+*Language*:: English
 
 === Feature Types and Feature Instances
 
