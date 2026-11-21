@@ -1,6 +1,7 @@
 # metanorma build artifacts
 sources/main-document/document.html
 sources/main-document/document.err.html
+sources/main-document/document.doc
 sources/main-document/document.pdf
 sources/main-document/document.pdf.err*
 sources/main-document/document.rxl
