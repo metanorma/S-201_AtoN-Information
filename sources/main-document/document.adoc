@@ -3,6 +3,7 @@
 :subtitle: IALA AtoN Information Product Specification
 :series: S
 :docnumber: 201
+:docidentifier: S-201
 :doctype: standard
 :edition: 2.0.0
 :language: en
@@ -12,9 +13,11 @@
 :publisher: IALA
 :boilerplate-authority: boilerplate-iala.adoc
 :toclevels: 3
-:mn-document-class: iho
+:mn-document-class: iala
 :mn-output-extensions: html,pdf
 :imagesdir: images
+:local-cache-only:
+:data-uri-image:
 
 include::sections/00-revisions.adoc[]
 

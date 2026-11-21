@@ -1,0 +1,91 @@
+name: docker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: metanorma/metanorma:latest
+    env:
+      # The container image exports BUNDLE_GEMFILE=/setup/Gemfile (its
+      # released stack); point bundler at this repo's git-pinned Gemfile
+      # so the IALA corpus build flow (metanorma/mn-samples-iala) runs on
+      # the same pinned stack here. Relative on purpose: the runner-side
+      # workspace path does not exist inside the container.
+      BUNDLE_GEMFILE: Gemfile
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Install the repo's git-pinned stack into the container before
+      # building under bundler (mn-samples-iala pattern). Must precede
+      # any metanorma invocation — the wrapper runs bundler setup.
+      - name: Install build deps for native gem extensions
+        run: apt-get update && apt-get install -y --no-install-recommends
+             build-essential libssl-dev
+
+      - name: Install the repo bundle
+        run: bundle install --jobs 4
+        env:
+          # The image forces RUBYOPT=-rbundler/setup, which would load
+          # the (not yet installed) repo bundle inside bundle install
+          # itself ("git source not yet checked out").
+          RUBYOPT: ""
+
+      - name: Print Metanorma version
+        run: metanorma --version
+
+      - name: Cache or generate Metanorma XML
+        uses: actions-mn/build-and-publish@v2
+        with:
+          agree-to-terms: true
+          use-bundler: true
+          destination: artifact
+          artifact-name: mn
+          cache-site-for-manifest: metanorma.yml
+
+  deploy-pages:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Make dist dir
+        run: mkdir dist
+
+      - name: Download Metanorma artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: mn
+          path: dist
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
