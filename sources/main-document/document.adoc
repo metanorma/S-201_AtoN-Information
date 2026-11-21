@@ -6,6 +6,11 @@
 :doctype: standard
 :edition: 2.0.0
 :language: en
+// The printed identifier is S-201 (S-102's convention: the hyphen is part
+// of the identifier; the number is not zero-padded). Pinned explicitly so
+// the auto-minted form (Pubid::Iala canonicalises S 201 to the 4-digit
+// S0201) does not leak into bibdata and the cover/footer MRN.
+:urn: urn:mrn:iala:pub:s-201:ed2.0.0
 :published-date: 2025-05-19
 :copyright-year: 2025
 :copyright-holder: IALA
@@ -13,7 +18,7 @@
 :boilerplate-authority: boilerplate-iala.adoc
 :toclevels: 3
 :mn-document-class: iala
-:mn-output-extensions: html,pdf
+:mn-output-extensions: xml,html,doc,pdf,rxl
 :imagesdir: images
 :local-cache-only:
 :data-uri-image:

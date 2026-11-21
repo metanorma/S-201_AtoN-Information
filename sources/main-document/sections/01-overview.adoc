@@ -35,71 +35,61 @@ Terms and definitions have been taken from the normative references cited in cla
 
 ==== Acronyms
 
-[cols="1,3",options="header"]
-|===
-| Acronym | Expansion
-
-| ASCII | American Standard Code for Information Interchange
-| AtoN | Aids to Navigation
-| CRS | Coordinate Reference System
-| ECDIS | Electronic Chart Display and Information System
-| EPSG | European Petroleum Survey Group
-| ENC | Electronic Navigational Chart
-| GML | Geography Markup Language
-| HTML | Hypertext Markup Language
-| IALA | International Organization for Marine Aids to Navigation
-| IHO | International Hydrographic Organization
-| IMO | International Maritime Organization
-| ISO | International Organization for Standardization
-| TIFF | Tag Image File Format
-| XML | Extensible Markup Language
-| XSD | XML Schema Definition
-| XSLT | eXtensible Stylesheet Language
-|===
+ASCII:: American Standard Code for Information Interchange
+AtoN:: Aids to Navigation
+CRS:: Coordinate Reference System
+ECDIS:: Electronic Chart Display and Information System
+EPSG:: European Petroleum Survey Group
+ENC:: Electronic Navigational Chart
+GML:: Geography Markup Language
+HTML:: Hypertext Markup Language
+IALA:: International Organization for Marine Aids to Navigation
+IHO:: International Hydrographic Organization
+IMO:: International Maritime Organization
+ISO:: International Organization for Standardization
+TIFF:: Tag Image File Format
+XML:: Extensible Markup Language
+XSD:: XML Schema Definition
+XSLT:: eXtensible Stylesheet Language
 
 === Product specification metadata
 
-[cols="1,3",options="header"]
-|===
-| Item | Value
+This information uniquely identifies this Product Specification and provides information about its creation and maintenance.
 
-h| Title | Aids to Navigation Product Specification
-h| Version | 2.0.0
-h| Identifier | S-201
-h| S-100 version | 5.2.0
-h| Date | 19 May 2025
-h| Language | English
-h| Classification | 001 - unclassified
-h| Contact | IALA, 10, rue des Gaudines, 78100 Saint Germain en Laye, France. Telephone: +33 1 34 51 70 01, Fax: +33 1 34 51 82 05
-h| URL | www.iala.int
-h| Maintenance | The product specification is maintained by IALA and amendments are performed on a needs base, up to maximum of one new release per calendar year.
-|===
+*Title*:: Aids to Navigation Product Specification
+*Version*:: 2.0.0
+*Identifier*:: S-201
+*S-100 version*:: 5.2.0
+*Date*:: 19 May 2025
+*Language*:: English
+*Classification*:: 001 - unclassified
+*Contact*:: IALA, 10, rue des Gaudines, 78100 Saint Germain en Laye, France. Telephone: +33 1 34 51 70 01, Fax: +33 1 34 51 82 05
+*URL*:: www.iala.int
+*Maintenance*:: The product specification is maintained by IALA and amendments are performed on a needs base, up to maximum of one new release per calendar year.
 
-==== IALA Product Specification Maintenance
+=== IALA Product Specification Maintenance
 
-This section details the process of maintaining this document.
-
-===== Introduction
+==== Introduction
 
 Changes to this product specification will be released by IALA as a new edition, revision, or clarification.
 
-===== New Edition
+==== New Edition
 
 New editions of this product specification introduce significant changes. New editions enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types.
 
-===== Revisions
+==== Revisions
 
 Revisions are defined as substantive semantic changes to a product specification. Typically, revisions will change a product specification to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A revision must not be classified as a clarification. Revisions could have an impact on either existing users or future users of a product specification. All cumulative clarifications must be included with the release of approved corrections.
 
 Changes in a revision are minor and ensure backward compatibility with the previous versions within the same edition. Newer revisions, for example, introduce new features and attributes. Within the same edition, a data product of one version could always be processed with a later version of the feature and portrayal catalogues.
 
-===== Clarification
+==== Clarification
 
 Clarifications are non-substantive changes to this product specification. Typically, clarifications: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics, spelling, punctuation and grammar. A clarification must not cause any substantive semantic change to a product specification.
 
 Changes in a clarification are minor and ensure backward compatibility with the previous versions within the same edition. Within the same edition, a data product of one clarification version could always be processed with a later version of the feature and portrayal catalogues, and a portrayal catalogue can always rely on earlier versions of the feature catalogues.
 
-===== Version Numbers
+==== Version Numbers
 
 The associated version control numbering to identify changes (n) to this product specification will be as follows:
 

@@ -1,6 +1,7 @@
 # metanorma build artifacts
 sources/main-document/document.html
 sources/main-document/document.err.html
+sources/main-document/document.doc
 sources/main-document/document.pdf
 sources/main-document/document.pdf.err*
 sources/main-document/document.rxl
@@ -10,3 +11,6 @@ sources/main-document/document.presentation.xml
 sources/main-document/document.asciidoc.log.txt
 sources/main-document/relaton
 sources/main-document/*.tmp
+
+# local bundle cache (container builds with BUNDLE_PATH=vendor/linux-bundle)
+vendor/
