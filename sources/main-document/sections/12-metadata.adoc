@@ -1,3 +1,4 @@
+[[cls-12]]
 == Metadata
 
 === Introduction
@@ -10,7 +11,7 @@ Since the class S100_DatasetDiscoveryMetadata aggregates ISO 19115 metadata (cla
 
 === Metadata classes
 
-Details for the S-100 metadata classes are depicted in S-100 Part 17.
+Details for the S-100 metadata classes are depicted in <<IHOS100,part=17>>.
 
 ==== S100_ExchangeCatalogue
 
