@@ -7,11 +7,11 @@ This clause specifies the encoding and delivery mechanisms for an S-201 dataset.
 |===
 | Name | ISO 19131 Elements | Value
 
-| Format name | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.formatName | GML footnote:[GML is an XML encoding for the transport and storage of geographic information, including both the geometry and the properties of geographic features, between distributed systems. The XML Schema for the GML application schema is provided in a schema document S-201 Data Product Format Schemas – Annex B.xsd which imports other schema(s) defining common types. These files are available in the IHO Geospatial Information Registry. Feature instances must validate against S-201 Data Product Format Schemas – Annex B.xsd and conform to all other requirements specified in this data product specification, including all constraints not captured in the XML Schema document.]
+| Format name | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.formatName | GML footnote:[GML is an XML encoding for the transport and storage of geographic information, including both the geometry and the properties of geographic features, between distributed systems. The XML Schema for the GML application schema is provided in a schema document S-201 Data Product Format Schemas -- Annex B.xsd which imports other schema(s) defining common types. These files are available in the IHO Geospatial Information Registry. Feature instances must validate against S-201 Data Product Format Schemas -- Annex B.xsd and conform to all other requirements specified in this data product specification, including all constraints not captured in the XML Schema document.]
 | Version | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.version | 3.2.1
-| Specification description | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.specification | GML footnote:[GML is an XML encoding for the transport and storage of geographic information, including both the geometry and the properties of geographic features, between distributed systems. The XML Schema for the GML application schema is provided in a schema document S-201 Data Product Format Schemas – Annex B.xsd which imports other schema(s) defining common types. These files are available in the IHO Geospatial Information Registry. Feature instances must validate against S-201 Data Product Format Schemas – Annex B.xsd and conform to all other requirements specified in this data product specification, including all constraints not captured in the XML Schema document.]
+| Specification description | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.specification | GML footnote:[GML is an XML encoding for the transport and storage of geographic information, including both the geometry and the properties of geographic features, between distributed systems. The XML Schema for the GML application schema is provided in a schema document S-201 Data Product Format Schemas -- Annex B.xsd which imports other schema(s) defining common types. These files are available in the IHO Geospatial Information Registry. Feature instances must validate against S-201 Data Product Format Schemas -- Annex B.xsd and conform to all other requirements specified in this data product specification, including all constraints not captured in the XML Schema document.]
 | Language | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.language | English
-| Character set | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.characterSet > MD_CharacterSetCode | 004 – utf8
+| Character set | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.characterSet > MD_CharacterSetCode | 004 -- utf8
 |===
 
 === Exchange set
@@ -38,14 +38,14 @@ The exchange set elements are as follows:
 
 Mandatory Elements
 
-* AtoN datasets – GML encoding of features/attributes and their associated geometry and metadata.
-* Exchange Catalogue – the XML encoded representation of exchange set catalogue features [discovery metadata].
+* AtoN datasets -- GML encoding of features/attributes and their associated geometry and metadata.
+* Exchange Catalogue -- the XML encoded representation of exchange set catalogue features [discovery metadata].
 
 Optional Elements
 
-* Supplementary files – These are contained within the exchange set as files and the map from the name included within the dataset and the physical location on the media is defined within the Exchange Catalogue.
-* Feature Catalogue – If it is necessary to deliver the latest feature catalogue to the end user it may be done using the S-201 exchange set mechanism for datasets – i.e., include the updated feature catalogue in an exchange set.
-* Portrayal Catalogue - If it is necessary to deliver the latest portrayal catalogue to the end user it may be done using the S-201 exchange set mechanism for datasets – i.e., include the updated feature catalogue in an exchange set.
+* Supplementary files -- These are contained within the exchange set as files and the map from the name included within the dataset and the physical location on the media is defined within the Exchange Catalogue.
+* Feature Catalogue -- If it is necessary to deliver the latest feature catalogue to the end user it may be done using the S-201 exchange set mechanism for datasets -- i.e., include the updated feature catalogue in an exchange set.
+* Portrayal Catalogue - If it is necessary to deliver the latest portrayal catalogue to the end user it may be done using the S-201 exchange set mechanism for datasets -- i.e., include the updated feature catalogue in an exchange set.
 
 === Datasets
 
@@ -69,10 +69,10 @@ Dataset files shall be named
 The file name forms a unique identifier where:
 
 * The first three characters are always "201" and identify the dataset as an S-201 dataset.
-* CCCC – the next four characters identify the issuing agency by its alphanumeric agency code in the IHO producer code register in the IHO GI Registry (i.e., the IHO is identified as "AA", not "1810"). Where the agency code consists of fewer than four characters, sufficient zeros must be suffixed to make the length exactly four characters (e.g., "AA00" for IHO).
-* XXXXXXXX – the next eight characters may be used in any way by the producer to provide the unique file name.
-* EEE – new (first) editions use 000, and increment until a limit of 999 (mandatory).
-* GML – the character sequence "GML" or "gml".
+* CCCC -- the next four characters identify the issuing agency by its alphanumeric agency code in the IHO producer code register in the IHO GI Registry (i.e., the IHO is identified as "AA", not "1810"). Where the agency code consists of fewer than four characters, sufficient zeros must be suffixed to make the length exactly four characters (e.g., "AA00" for IHO).
+* XXXXXXXX -- the next eight characters may be used in any way by the producer to provide the unique file name.
+* EEE -- new (first) editions use 000, and increment until a limit of 999 (mandatory).
+* GML -- the character sequence "GML" or "gml".
 * The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore).
 
 [[cls-11.5]]
@@ -97,9 +97,9 @@ In this encoding the support files are named according to the specifications giv
 The main part forms an identifier where:
 
 * The first three characters are always "201" and identify the dataset as an S-201 dataset.
-* CCCC – the next four characters identify the issuing agency by its alphanumeric agency code in the IHO producer code register in the IHO GI Registry (i.e., the IHO is identified as "AA", not "1810"). Where the agency code consists of fewer than four characters, sufficient zeros must be suffixed to make the length exactly four characters (e.g., "AA00" for IHO).
-* XXXXXXXX – the next eight characters can be used in any way by the producer to provide the unique file name. It is not required to use all characters.
-* .EEE – support file extension (Must conform to the file format.)
+* CCCC -- the next four characters identify the issuing agency by its alphanumeric agency code in the IHO producer code register in the IHO GI Registry (i.e., the IHO is identified as "AA", not "1810"). Where the agency code consists of fewer than four characters, sufficient zeros must be suffixed to make the length exactly four characters (e.g., "AA00" for IHO).
+* XXXXXXXX -- the next eight characters can be used in any way by the producer to provide the unique file name. It is not required to use all characters.
+* .EEE -- support file extension (Must conform to the file format.)
 * The following characters are allowed in the support file name, A to Z, 0 to 9 and the special character _ (underscore)
 
 === Support file management

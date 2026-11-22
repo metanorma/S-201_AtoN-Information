@@ -76,15 +76,15 @@ image::figure-9.png[width=700]
 <<<
 
 [[fig10]]
-.Enumerations – Aton change details
+.Enumerations -- Aton change details
 image::figure-10.png[]
 
 [[fig11]]
-.Enumerations – Categories
+.Enumerations -- Categories
 image::figure-11.png[]
 
 [[fig12]]
-.Enumerations – Colour, characteristics, and shape enumerated attributes
+.Enumerations -- Colour, characteristics, and shape enumerated attributes
 image::figure-12.png[width=700]
 
 [[fig13]]
@@ -120,15 +120,15 @@ URL: https://www.iala.int
 
 === Feature Types and Feature Instances
 
-Features have two aspects – feature type and feature instance. A feature type is a class and is defined in a Feature Catalogue. Feature types contain descriptive attributes and do not contain any geometry (i.e. information about the shape and position of a real-world entity). A feature instance is a single occurrence of the feature type and represented as an object in a dataset. A feature instance is located by a relationship to one or more spatial instances. A feature instance may exist without referencing a spatial instance.
+Features have two aspects -- feature type and feature instance. A feature type is a class and is defined in a Feature Catalogue. Feature types contain descriptive attributes and do not contain any geometry (i.e. information about the shape and position of a real-world entity). A feature instance is a single occurrence of the feature type and represented as an object in a dataset. A feature instance is located by a relationship to one or more spatial instances. A feature instance may exist without referencing a spatial instance.
 
 S-201 makes use of the following feature types:
 
-Geographic (Geo) feature type – carries the descriptive characteristics of a real-world entity.
+Geographic (Geo) feature type -- carries the descriptive characteristics of a real-world entity.
 
-Relationship feature type – a feature relationship links instances of one feature type with instances of the same or a different feature type.
+Relationship feature type -- a feature relationship links instances of one feature type with instances of the same or a different feature type.
 
-Meta features – meta features contain information about other features within a dataset. Information defined by meta features overrides the default metadata values defined by the dataset descriptive records. Meta attribution on individual features overrides attribution on meta features.
+Meta features -- meta features contain information about other features within a dataset. Information defined by meta features overrides the default metadata values defined by the dataset descriptive records. Meta attribution on individual features overrides attribution on meta features.
 
 === Dataset
 
@@ -147,7 +147,7 @@ Datasets should not exceed 50MB.
 
 The specifications for S-201 geometry are the same as for S-101 geometry except that 3 dimensional geometry is not permitted even for sounding features, since these features are not part of the S-201 application schema. The relevant (modified) extract from the S-101 product specification is reproduced below.
 
-The underlying geometry of an S-201 dataset is constrained to level 3a which supports 0, 1 and 2 dimensional features (points, curves and surfaces) as defined by <<IHOS100,part=7>> – Spatial Schema.
+The underlying geometry of an S-201 dataset is constrained to level 3a which supports 0, 1 and 2 dimensional features (points, curves and surfaces) as defined by <<IHOS100,part=7>> -- Spatial Schema.
 
 Level 3a is described by the following constraints:
 
