@@ -45,6 +45,9 @@ source.
 [heading=terms and definitions]
 ==== Terms and definitions
 
+[.boilerplate]
+===== {blank}
+
 Terms and definitions have been taken from the normative references cited in <<cls-1.2.1>>.
 
 ==== Acronyms
