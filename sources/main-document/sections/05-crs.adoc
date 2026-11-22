@@ -2,15 +2,20 @@
 
 === Introduction
 
-The single coordinate reference system is separated into the horizontal and vertical components.
+The single coordinate reference system is separated into the horizontal and vertical
+components.
 
 === Horizontal Geodetic Datum
 
-WGS84 (World Geodetic System of 1984) must be used for the horizontal reference system for spatial data.
+WGS84 (World Geodetic System of 1984) must be used for the horizontal reference system for
+spatial data.
 
 === Vertical Datum
 
-Vertical datum shall be selected from the list in verticalDatum enumeration. If the local datum value is used, additional information must be provided using the comment attribute in the metadata, or information attribute on the feature instance. Positive value is above vertical datum and negative is below vertical datum.
+Vertical datum shall be selected from the list in verticalDatum enumeration. If the local
+datum value is used, additional information must be provided using the comment attribute
+in the metadata, or information attribute on the feature instance. Positive value is above
+vertical datum and negative is below vertical datum.
 
 === Units of Measure
 

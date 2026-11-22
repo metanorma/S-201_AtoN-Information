@@ -3,29 +3,69 @@
 
 === Introduction
 
-An AtoN Information dataset is a feature-based product. The following sub-sections contain the product application schema expressed in UML and an associated feature catalogue. The feature catalogue provides a full description of each feature type including its attributes and attribute values in the data product.
+An AtoN Information dataset is a feature-based product. The following sub-sections
+contain the product application schema expressed in UML and an associated feature
+catalogue. The feature catalogue provides a full description of each feature type
+including its attributes and attribute values in the data product.
 
 === Application Schema
 
-The application schema conforms to the modelling conventions of UML as constrained in <<IHOS100,part=1>> and conforms to the General Feature Model described in <<IHOS100,part=3>>.
+The application schema conforms to the modelling conventions of UML as constrained in
+<<IHOS100,part=1>> and conforms to the General Feature Model described in
+<<IHOS100,part=3>>.
 
-An overview of the application schema is provided in <<fig1>>. <<fig2;to!fig9>> provide details for feature types and their relationships. The allowed values for enumeration attributes are depicted in <<fig10;to!fig14>>. In conformance to S-57 and S-101, aids to navigation are described by combinations of structure and equipment features.
+An overview of the application schema is provided in <<fig1>>. <<fig2;to!fig9>> provide
+details for feature types and their relationships. The allowed values for enumeration
+attributes are depicted in <<fig10;to!fig14>>. In conformance to S-57 and S-101, aids to
+navigation are described by combinations of structure and equipment features.
 
-* The feature type AidsToNavigation is an abstract type from which the geographic feature types for aids to navigation are ultimately derived.
-* StructureObject and Equipment are abstract types which collect the attributes and relationships common to structure and equipment features respectively. The relationship that exists between them is between structure and equipment features in the combining of structure and equipment object(s) to make up an individual aid to navigation.
-* GenericBeacon and GenericBuoy are abstract types which collect attributes common to multiple types of beacon and buoy features respectively.
-* Links to the geographic features for individual AtoN constituting the collection object are modelled by feature associations (the "Aggregations" and "Associations" links between Aggregation and Association classes and the common supertype for geographic AtoN features (AidsToNavigation)). The type of the collection feature is indicated by the attribute categoryOfAggregation which can take the allowed values listed in the codelists of the same names.
-* Structure-equipment associations are modelled by the association labelled StructureEquipment, between classes Structure and Equipment in <<fig1>>.
-* Features participating in the same range system are indicated by the association labelled RangeSystem, between feature classes NavigationLine and RecommendedTrack.
-* The model supports three types of AIS features like PhysicalAISAidToNavigation, VirtualAISAidToNavigation, SyntheticAISAidToNavigation. The AIS feature inherits attribute types from the super abstract class ElectronicAton and is used as an independent Aton that is not as equipment or structure. The AIS features are associated with the RadioStation having the attribute values of AIS Base Station, which broadcasts it. AIS related items are shown in <<fig4>>.
-* Structure features include Lighthouse, Landmark, Pile, LightFloat, OffShorePlatform, LightVessel, and SiloTank features as well as buoys and beacons of different kinds. The detailed models of structure features are depicted in <<fig2>>.
-* The equipment objects are Daymark, FogSignal, RadarReflector, Light, Retroreflector, Topmark, RadarTransponderBeacon, EnvironmentalObservationEquipment, PhysicalAISAidToNavigation, and RadioStation. Daymark is allowed to act as either a structure or equipment feature in practice, but this cannot at present be modelled in the application schema since S-100 discourages multiple inheritance. The detailed model of equipment objects is depicted in <<fig3>>.
-* The feature classes Navigation Line and Recommended Track are neither structure nor equipment objects and are depicted in complete detail in <<fig1>>.
-* PowerSource inherited from the Equipment includes information about the type (battery, generator, solar panel, electronical service), status, and manufacturer of the power source.
-* MooringWarpingFacility and EmergencyWreckMarkingBuoy are included to support purposes of mooring and emergency wreck buoy.
-* CounterWeight, MooringShackle, Bridle, Swivel, CableSubmarine, and SinkerAnchor are defined to define AtoN fixing method, moorings.
-* AtonStatusInformation has changeDetails as a complex attribute and changeTypes as enumeration, including advanced notice of changes, discrepancy, proposed changes and temporary changes.
-* changeDetails is defined to describe type of AtoN change and the detailed model is depicted in <<fig10>>.
+* The feature type AidsToNavigation is an abstract type from which the geographic
+feature types for aids to navigation are ultimately derived.
+* StructureObject and Equipment are abstract types which collect the attributes and
+relationships common to structure and equipment features respectively. The relationship
+that exists between them is between structure and equipment features in the combining of
+structure and equipment object(s) to make up an individual aid to navigation.
+* GenericBeacon and GenericBuoy are abstract types which collect attributes common to
+multiple types of beacon and buoy features respectively.
+* Links to the geographic features for individual AtoN constituting the collection
+object are modelled by feature associations (the "Aggregations" and "Associations" links
+between Aggregation and Association classes and the common supertype for geographic AtoN
+features (AidsToNavigation)). The type of the collection feature is indicated by the
+attribute categoryOfAggregation which can take the allowed values listed in the
+codelists of the same names.
+* Structure-equipment associations are modelled by the association labelled
+StructureEquipment, between classes Structure and Equipment in <<fig1>>.
+* Features participating in the same range system are indicated by the association
+labelled RangeSystem, between feature classes NavigationLine and RecommendedTrack.
+* The model supports three types of AIS features like PhysicalAISAidToNavigation,
+VirtualAISAidToNavigation, SyntheticAISAidToNavigation. The AIS feature inherits
+attribute types from the super abstract class ElectronicAton and is used as an
+independent Aton that is not as equipment or structure. The AIS features are associated
+with the RadioStation having the attribute values of AIS Base Station, which broadcasts
+it. AIS related items are shown in <<fig4>>.
+* Structure features include Lighthouse, Landmark, Pile, LightFloat, OffShorePlatform,
+LightVessel, and SiloTank features as well as buoys and beacons of different kinds. The
+detailed models of structure features are depicted in <<fig2>>.
+* The equipment objects are Daymark, FogSignal, RadarReflector, Light, Retroreflector,
+Topmark, RadarTransponderBeacon, EnvironmentalObservationEquipment,
+PhysicalAISAidToNavigation, and RadioStation. Daymark is allowed to act as either a
+structure or equipment feature in practice, but this cannot at present be modelled in
+the application schema since S-100 discourages multiple inheritance. The detailed model
+of equipment objects is depicted in <<fig3>>.
+* The feature classes Navigation Line and Recommended Track are neither structure nor
+equipment objects and are depicted in complete detail in <<fig1>>.
+* PowerSource inherited from the Equipment includes information about the type (battery,
+generator, solar panel, electronical service), status, and manufacturer of the power
+source.
+* MooringWarpingFacility and EmergencyWreckMarkingBuoy are included to support purposes
+of mooring and emergency wreck buoy.
+* CounterWeight, MooringShackle, Bridle, Swivel, CableSubmarine, and SinkerAnchor are
+defined to define AtoN fixing method, moorings.
+* AtonStatusInformation has changeDetails as a complex attribute and changeTypes as
+enumeration, including advanced notice of changes, discrepancy, proposed changes and
+temporary changes.
+* changeDetails is defined to describe type of AtoN change and the detailed model is
+depicted in <<fig10>>.
 
 [%landscape]
 <<<
@@ -97,7 +137,9 @@ image::figure-14.png[]
 
 === Meta features application schema
 
-Meta features include data coverage, data quality, datums and areas with established characteristics for navigational systems of marks (buoyage direction and system of marks). The application schema for meta features is depicted in <<fig15>>.
+Meta features include data coverage, data quality, datums and areas with established
+characteristics for navigational systems of marks (buoyage direction and system of
+marks). The application schema for meta features is depicted in <<fig15>>.
 
 [[fig15]]
 .Meta features application schema
@@ -105,7 +147,11 @@ image::figure-15.png[]
 
 === Feature Catalogue
 
-The Feature Catalogue describes the feature types, information types, attributes, attribute values, associations and roles which may be used in the product. It also assigns the geometric primitives. The S-201 Feature Catalogue is available in an XML document which conforms to the S-100 XML Feature Catalogue Schema and can be downloaded from the IALA website (iala.int). The feature catalogue is provided in Annex C2.
+The Feature Catalogue describes the feature types, information types, attributes,
+attribute values, associations and roles which may be used in the product. It also
+assigns the geometric primitives. The S-201 Feature Catalogue is available in an XML
+document which conforms to the S-100 XML Feature Catalogue Schema and can be downloaded
+from the IALA website (iala.int). The feature catalogue is provided in Annex C2.
 
 *Name*:: Aids to Navigation Information Feature Catalogue
 *Scope*:: Ocean, Coastal, Ports, Harbours and Inland waters
@@ -120,48 +166,81 @@ URL: https://www.iala.int
 
 === Feature Types and Feature Instances
 
-Features have two aspects -- feature type and feature instance. A feature type is a class and is defined in a Feature Catalogue. Feature types contain descriptive attributes and do not contain any geometry (i.e. information about the shape and position of a real-world entity). A feature instance is a single occurrence of the feature type and represented as an object in a dataset. A feature instance is located by a relationship to one or more spatial instances. A feature instance may exist without referencing a spatial instance.
+Features have two aspects -- feature type and feature instance. A feature type is a
+class and is defined in a Feature Catalogue. Feature types contain descriptive
+attributes and do not contain any geometry (i.e. information about the shape and
+position of a real-world entity). A feature instance is a single occurrence of the
+feature type and represented as an object in a dataset. A feature instance is located by
+a relationship to one or more spatial instances. A feature instance may exist without
+referencing a spatial instance.
 
 S-201 makes use of the following feature types:
 
-Geographic (Geo) feature type -- carries the descriptive characteristics of a real-world entity.
+Geographic (Geo) feature type -- carries the descriptive characteristics of a real-world
+entity.
 
-Relationship feature type -- a feature relationship links instances of one feature type with instances of the same or a different feature type.
+Relationship feature type -- a feature relationship links instances of one feature type
+with instances of the same or a different feature type.
 
-Meta features -- meta features contain information about other features within a dataset. Information defined by meta features overrides the default metadata values defined by the dataset descriptive records. Meta attribution on individual features overrides attribution on meta features.
+Meta features -- meta features contain information about other features within a
+dataset. Information defined by meta features overrides the default metadata values
+defined by the dataset descriptive records. Meta attribution on individual features
+overrides attribution on meta features.
 
 === Dataset
 
-A dataset is a grouping of features, attributes, geometry and metadata which comprises a specific coverage. AtoN data is scale independent but may use the scaleMinimum and scaleMaximum attributes of S100_GF_SpatialAttributeType to declutter the data in certain viewing scales. The use of scaleMinimum and scaleMaximum is at the discretion of the data producer.
+A dataset is a grouping of features, attributes, geometry and metadata which comprises a
+specific coverage. AtoN data is scale independent but may use the scaleMinimum and
+scaleMaximum attributes of S100_GF_SpatialAttributeType to declutter the data in certain
+viewing scales. The use of scaleMinimum and scaleMaximum is at the discretion of the
+data producer.
 
 [[cls-4.7]]
 === Dataset rules
 
-In order to facilitate the efficient processing and cataloguing of AtoN data the geographic coverage may be split into multiple datasets. There must be no overlapping datasets, except at the agreed adjoining national data limits, where, if it is difficult to achieve a perfect join, a 5 metre overlapping buffer zone may be used; and for this situation, there must be no gaps in data. The discovery metadata of a dataset must list all the DataCoverage features contained within that dataset.
+In order to facilitate the efficient processing and cataloguing of AtoN data the
+geographic coverage may be split into multiple datasets. There must be no overlapping
+datasets, except at the agreed adjoining national data limits, where, if it is difficult
+to achieve a perfect join, a 5 metre overlapping buffer zone may be used; and for this
+situation, there must be no gaps in data. The discovery metadata of a dataset must list
+all the DataCoverage features contained within that dataset.
 
-Datasets are replaced by new editions that must be considered a whole replacement of the previous version. Delta change datasets are not permitted.
+Datasets are replaced by new editions that must be considered a whole replacement of the
+previous version. Delta change datasets are not permitted.
 
 Datasets should not exceed 50MB.
 
 === Geometry
 
-The specifications for S-201 geometry are the same as for S-101 geometry except that 3 dimensional geometry is not permitted even for sounding features, since these features are not part of the S-201 application schema. The relevant (modified) extract from the S-101 product specification is reproduced below.
+The specifications for S-201 geometry are the same as for S-101 geometry except that 3
+dimensional geometry is not permitted even for sounding features, since these features
+are not part of the S-201 application schema. The relevant (modified) extract from the
+S-101 product specification is reproduced below.
 
-The underlying geometry of an S-201 dataset is constrained to level 3a which supports 0, 1 and 2 dimensional features (points, curves and surfaces) as defined by <<IHOS100,part=7>> -- Spatial Schema.
+The underlying geometry of an S-201 dataset is constrained to level 3a which supports 0,
+1 and 2 dimensional features (points, curves and surfaces) as defined by
+<<IHOS100,part=7>> -- Spatial Schema.
 
 Level 3a is described by the following constraints:
 
 * Each curve must reference a start and end point (they may be the same).
 * Curves must not self-intersect.
-* The outer boundary of a surface must be in a clockwise direction (surface to the right of the curve) and the curve orientation positive. The inner boundary of a surface must be in a counter-clockwise direction (surface to the right of the curve) and the curve orientation negative.
+* The outer boundary of a surface must be in a clockwise direction (surface to the right
+of the curve) and the curve orientation positive. The inner boundary of a surface must
+be in a counter-clockwise direction (surface to the right of the curve) and the curve
+orientation negative.
 
 S-201 further constrains Level 3a with the following:
 
 * Coincident linear geometry must be avoided when there is a dependency between features.
 * The interpolation of GM_CurveSegment must be loxodromic.
-* Linear geometry is defined by curves which are made of curve segments. Each curve segment contains the geographic coordinates as control points and defines an interpolation method between them. The distance between two consecutive control points must not exceed 0.3 mm at a display scale of 1:10000.
+* Linear geometry is defined by curves which are made of curve segments. Each curve
+segment contains the geographic coordinates as control points and defines an
+interpolation method between them. The distance between two consecutive control points
+must not exceed 0.3 mm at a display scale of 1:10000.
 
 The following exception applies to S-201:
 
 * The use of coordinates is restricted to 2 dimensions.
-* Soundings features which use GM_Point or GM_Multipoint with 3 dimensional coordinates are not currently included in S-201.
+* Soundings features which use GM_Point or GM_Multipoint with 3 dimensional coordinates
+are not currently included in S-201.

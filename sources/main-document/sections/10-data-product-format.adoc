@@ -2,7 +2,8 @@
 
 === Introduction
 
-The GML encoding of S-201 datasets is based on the S-100 profile of GML 3.2.1. This is described in <<IHOS100,part=10b>>.
+The GML encoding of S-201 datasets is based on the S-100 profile of GML 3.2.1. This is
+described in <<IHOS100,part=10b>>.
 
 Format Name: GML, Specification: S-100 profile of GML Part 10b.
 
@@ -10,27 +11,40 @@ File Name: S-201 Data Product Format Schemas - Annex B.
 
 === Encoding of Latitude and Longitude
 
-Values of latitude and longitude must be expressed with a precision of 7 decimal places. Coordinates must be encoded as decimals in the format described below. The encoding is indicated by multiplication factor fields defined in the dataset identification record by the S-100 GML schemas.
+Values of latitude and longitude must be expressed with a precision of 7 decimal places.
+Coordinates must be encoded as decimals in the format described below. The encoding is
+indicated by multiplication factor fields defined in the dataset identification record
+by the S-100 GML schemas.
 
 === Encoding of coordinates as decimals
 
-Values should be encoded as decimal numbers with 7 or fewer digits after the decimal. The normative encoding is in degrees, with an accuracy of 10^-7^ degrees, i.e., 7 digits after the decimal point.
+Values should be encoded as decimal numbers with 7 or fewer digits after the decimal.
+The normative encoding is in degrees, with an accuracy of 10^-7^ degrees, i.e., 7 digits
+after the decimal point.
 
 The decimal point must be indicated by the "." character.
 
-Trailing zeroes after the decimal point (and the decimal point itself if appropriate) may be omitted at producer discretion, but the accuracy must still be as indicated (e.g., 10^-7^ degrees for coordinates of default accuracy).
+Trailing zeroes after the decimal point (and the decimal point itself if appropriate)
+may be omitted at producer discretion, but the accuracy must still be as indicated
+(e.g., 10^-7^ degrees for coordinates of default accuracy).
 
-Latitude and longitude multiplication factors held in the Dataset Structure Information field under [`coordMultFactorX`] and [`coordMultFactorY`] must be set to a value corresponding to the encoding, e.g., {1} for coordinates encoded in decimal degrees.
+Latitude and longitude multiplication factors held in the Dataset Structure Information
+field under [`coordMultFactorX`] and [`coordMultFactorY`] must be set to a value
+corresponding to the encoding, e.g., {1} for coordinates encoded in decimal degrees.
 
-Example: A longitude = 42.0000 is converted into X = longitude * coordMultFactorX = 42.0000 * 1 = 42.0000000.
+[example]
+A longitude = 42.0000 is converted into X = longitude * coordMultFactorX =
+42.0000 * 1 = 42.0000000.
 
 === Numeric Attribute Encoding
 
-Floating point and integer attribute values must not contain leading zeros. Floating point attribute values must not contain non-significant trailing zeros.
+Floating point and integer attribute values must not contain leading zeros. Floating
+point attribute values must not contain non-significant trailing zeros.
 
 === Text Attribute Values
 
-Character strings must be encoded using the character set defined in ISO 10646-1, in Unicode Transformation Format-8 (UTF-8).
+Character strings must be encoded using the character set defined in ISO 10646-1, in
+Unicode Transformation Format-8 (UTF-8).
 
 === Mandatory Attribute Values
 
@@ -41,15 +55,23 @@ There are four reasons why attribute values may be considered mandatory:
 * Some attributes are necessary to determine which symbol is to be displayed
 * Some attributes are required for safety of navigation
 
-All mandatory attributes are identified in the Feature Catalogue and summarised in Annex A -- Data Classification and Encoding Guide.
+All mandatory attributes are identified in the Feature Catalogue and summarised in Annex
+A -- Data Classification and Encoding Guide.
 
 === Unknown Attribute Values
 
-When a mandatory attribute code or tag is present, but the attribute value is missing, it means that the producer wishes to indicate that this attribute value is unknown. Missing mandatory attributes must be "nilled" with a GML nilReason attribute giving the reason for omission.
+When a mandatory attribute code or tag is present, but the attribute value is missing,
+it means that the producer wishes to indicate that this attribute value is unknown.
+Missing mandatory attributes must be "nilled" with a GML nilReason attribute giving the
+reason for omission.
 
-Optional attributes must be omitted altogether if the value is unknown or missing. They must not be "nilled."
+Optional attributes must be omitted altogether if the value is unknown or missing. They
+must not be "nilled."
 
-Example: An isolated danger beacon feature has unknown color (mandatory attribute) and condition (optional attribute). The feature could be coded as:
+[example]
+====
+An isolated danger beacon feature has unknown color (mandatory attribute) and condition
+(optional attribute). The feature could be coded as:
 
 [source%unnumbered,xml]
 ----
@@ -60,6 +82,7 @@ Example: An isolated danger beacon feature has unknown color (mandatory attribut
   ... <condition> is NOT coded ...
 </BeaconIsolatedDanger>
 ----
+====
 
 === Structure of dataset files
 
@@ -81,13 +104,19 @@ The order of data objects in each dataset file is described below:
 
 === Object identifiers
 
-Features, information types, collection objects, meta features, and geometries (inline or by reference) are all required by the schema to have a *gml:id* attribute with a value that is unique within the dataset. The *gml:id* values must be used as the reference for the object from another object in the same dataset or another dataset.
+Features, information types, collection objects, meta features, and geometries (inline
+or by reference) are all required by the schema to have a *gml:id* attribute with a
+value that is unique within the dataset. The *gml:id* values must be used as the
+reference for the object from another object in the same dataset or another dataset.
 
-All geographic feature classes in S-201 have the idCode attribute. This attribute shall be used to hold the Maritime Resource Name (MRN) identifier for the feature instance.
+All geographic feature classes in S-201 have the idCode attribute. This attribute shall
+be used to hold the Maritime Resource Name (MRN) identifier for the feature instance.
 
 === Dataset validation
 
-Fields may be repeated or omitted as permitted by the XML schemas and the validation tests. Since XML schema cannot encode rules for conditional presence or attributes, these rules are checked by Schematron rules or other validation code.
+Fields may be repeated or omitted as permitted by the XML schemas and the validation
+tests. Since XML schema cannot encode rules for conditional presence or attributes,
+these rules are checked by Schematron rules or other validation code.
 
 === Data coverage
 
