@@ -1,4 +1,5 @@
-= Aids to Navigation Information Product Specification
+= IALA S-201 Product Specification
+:title: IALA S-201 Product Specification
 :subtitle: IALA AtoN Information Product Specification
 :series: S
 :docnumber: 201
@@ -40,5 +41,3 @@ include::sections/10-data-product-format.adoc[]
 include::sections/11-data-product-delivery.adoc[]
 
 include::sections/12-metadata.adoc[]
-
-include::sections/13-companion-documents.adoc[]
