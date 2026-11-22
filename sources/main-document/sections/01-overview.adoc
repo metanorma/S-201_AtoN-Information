@@ -2,9 +2,19 @@
 
 === Introduction
 
-The Aids to Navigation (AtoN) Information Product Specification provides a common structure for the exchange of information about AtoNs including metadata like maintenance schedules, equipment type such as battery and bulb types. This includes buoys, beacons, racons, lights, sound signals and AIS. The product contains the positions, properties, operational status and general comments related to an AtoN.
+The Aids to Navigation (AtoN) Information Product Specification provides a common
+structure for the exchange of information about AtoNs including metadata like
+maintenance schedules, equipment type such as battery and bulb types. This includes
+buoys, beacons, racons, lights, sound signals and AIS. The product contains the
+positions, properties, operational status and general comments related to an AtoN.
 
-The Product Specification can be used to exchange AtoN information in a consistent form between Lighthouse Authorities, Hydrographic Offices and other organisations to include commercial and professional agencies. S-201 is not intended to be for navigation systems like ECDIS, and therefore is not constrained by ECDIS requirements. This means that S-201 can include additional information to inform about AtoN services that would not be appropriate in a navigation system, such as AtoN fixing method, moorings and power source.
+The Product Specification can be used to exchange AtoN information in a consistent form
+between Lighthouse Authorities, Hydrographic Offices and other organisations to include
+commercial and professional agencies. S-201 is not intended to be for navigation systems
+like ECDIS, and therefore is not constrained by ECDIS requirements. This means that
+S-201 can include additional information to inform about AtoN services that would not be
+appropriate in a navigation system, such as AtoN fixing method, moorings and power
+source.
 
 === References
 
@@ -70,7 +80,8 @@ XSLT:: eXtensible Stylesheet Language
 78100 Saint Germain en Laye, France +
 Telephone: +33 1 34 51 70 01 Fax: +33 1 34 51 82 05
 *URL*:: www.iala.int
-*Maintenance*:: The product specification is maintained by IALA and amendments are performed on a needs base, up to maximum of one new release per calendar year.
+*Maintenance*:: The product specification is maintained by IALA and amendments are
+performed on a needs base, up to maximum of one new release per calendar year.
 
 ==== IALA Product Specification Maintenance
 
@@ -78,27 +89,47 @@ This section details the process of maintaining this document.
 
 ===== Introduction
 
-Changes to this product specification will be released by IALA as a new edition, revision, or clarification.
+Changes to this product specification will be released by IALA as a new edition,
+revision, or clarification.
 
 ===== New Edition
 
-New editions of this product specification introduce significant changes. New editions enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types.
+New editions of this product specification introduce significant changes. New editions
+enable new concepts, such as the ability to support new functions or applications, or
+the introduction of new constructs or data types.
 
 ===== Revisions
 
-Revisions are defined as substantive semantic changes to a product specification. Typically, revisions will change a product specification to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A revision must not be classified as a clarification. Revisions could have an impact on either existing users or future users of a product specification. All cumulative clarifications must be included with the release of approved corrections.
+Revisions are defined as substantive semantic changes to a product specification.
+Typically, revisions will change a product specification to correct factual errors;
+introduce necessary changes that have become evident as a result of practical experience
+or changing circumstances. A revision must not be classified as a clarification.
+Revisions could have an impact on either existing users or future users of a product
+specification. All cumulative clarifications must be included with the release of
+approved corrections.
 
-Changes in a revision are minor and ensure backward compatibility with the previous versions within the same edition. Newer revisions, for example, introduce new features and attributes. Within the same edition, a data product of one version could always be processed with a later version of the feature and portrayal catalogues.
+Changes in a revision are minor and ensure backward compatibility with the previous
+versions within the same edition. Newer revisions, for example, introduce new features
+and attributes. Within the same edition, a data product of one version could always be
+processed with a later version of the feature and portrayal catalogues.
 
 ===== Clarification
 
-Clarifications are non-substantive changes to this product specification. Typically, clarifications: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics, spelling, punctuation and grammar. A clarification must not cause any substantive semantic change to a product specification.
+Clarifications are non-substantive changes to this product specification. Typically,
+clarifications: remove ambiguity; correct grammatical and spelling errors; amend or
+update cross references; insert improved graphics, spelling, punctuation and grammar. A
+clarification must not cause any substantive semantic change to a product specification.
 
-Changes in a clarification are minor and ensure backward compatibility with the previous versions within the same edition. Within the same edition, a data product of one clarification version could always be processed with a later version of the feature and portrayal catalogues, and a portrayal catalogue can always rely on earlier versions of the feature catalogues.
+Changes in a clarification are minor and ensure backward compatibility with the previous
+versions within the same edition. Within the same edition, a data product of one
+clarification version could always be processed with a later version of the feature and
+portrayal catalogues, and a portrayal catalogue can always rely on earlier versions of
+the feature catalogues.
 
 ===== Version Numbers
 
-The associated version control numbering to identify changes (n) to this product specification will be as follows:
+The associated version control numbering to identify changes (n) to this product
+specification will be as follows:
 
 * New editions denoted as *n*.0.0
 * Revisions denoted as n.*n*.0

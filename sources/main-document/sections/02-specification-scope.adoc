@@ -1,6 +1,7 @@
 == Specification Scope
 
-This product specification describes one data product and therefore requires only one scope which is described below:
+This product specification describes one data product and therefore requires only one
+scope which is described below:
 
 *Scope ID*:: Aids to Navigation Information datasets
 *Hierarchical level*:: MD_ScopeCode - 005
