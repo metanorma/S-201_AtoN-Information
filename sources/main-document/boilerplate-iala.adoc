@@ -1,6 +1,6 @@
 == copyright-statement
 
-© Copyright International Organization for Marine Aids to Navigation (IALA) {{ docyear }}
+(C) Copyright International Organization for Marine Aids to Navigation (IALA) {{ docyear }}
 
 == license-statement
 

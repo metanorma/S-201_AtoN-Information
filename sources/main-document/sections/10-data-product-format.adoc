@@ -41,7 +41,7 @@ There are four reasons why attribute values may be considered mandatory:
 * Some attributes are necessary to determine which symbol is to be displayed
 * Some attributes are required for safety of navigation
 
-All mandatory attributes are identified in the Feature Catalogue and summarised in Annex A – Data Classification and Encoding Guide.
+All mandatory attributes are identified in the Feature Catalogue and summarised in Annex A -- Data Classification and Encoding Guide.
 
 === Unknown Attribute Values
 
@@ -56,8 +56,8 @@ Example: An isolated danger beacon feature has unknown color (mandatory attribut
 <BeaconIsolatedDanger>
   <beaconShape>beacon tower</beaconShape>
   <colour nilReason="unknown"/>
-  … other attributes…
-  … <condition> is NOT coded …
+  ... other attributes...
+  ... <condition> is NOT coded ...
 </BeaconIsolatedDanger>
 ----
 
