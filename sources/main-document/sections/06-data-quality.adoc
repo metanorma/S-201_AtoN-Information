@@ -10,7 +10,7 @@ Data Quality is considered to be meta information and for S-201 it is divided in
 
 === Data Compliance and Integrity
 
-S-201 datasets must be validated using the conformance checks that are listed in S-158:100. The data quality elements listed in S-100 Part 4C that are applicable to S-201 are indicated in the table of conformance checks listed in S-158:100.
+S-201 datasets must be validated using the conformance checks that are listed in S-158:100. The data quality elements listed in <<IHOS100,part=4C>> that are applicable to S-201 are indicated in the table of conformance checks listed in S-158:100.
 
 Datasets must not be published unless they pass all the compliance checks designated as "Critical".
 
@@ -19,12 +19,12 @@ The detailed results of applying compliance checks listed in S-158:100 are not r
 S-201 product specification follows the Category 3 in the S-100 compliancy categories considering the followings
 
 . The Product Specification contains an object model which is available as a Feature Catalogue from the IHO S-100 GI Registry and is compliant with the S-100 spatial model
-. The Product Specification adheres to the minimum requirements of S-100 Part 11. The Product Specification specifies which of the S-100 Part 10 encoding methods is used. Metadata is according to S-100 Part 4, a profile of Part 4 or an extension according to Part 4 rules.
-. The Product Specification uses only an encoding method defined in S-100 Part 10.
+. The Product Specification adheres to the minimum requirements of S-100 Part 11. The Product Specification specifies which of the S-100 Part 10 encoding methods is used. Metadata is according to <<IHOS100,part=4>>, a profile of Part 4 or an extension according to Part 4 rules.
+. The Product Specification uses only an encoding method defined in <<IHOS100,part=10>>.
 
 === Positional accuracy
 
-S-201 positional accuracy data quality indicators do not use the model of data quality elements defined in S-100 Part 4c.
+S-201 positional accuracy data quality indicators do not use the model of data quality elements defined in <<IHOS100,part=4c>>.
 
 However, positional accuracy must be evaluated and must be indicated in dataset metadata or spatial attribute metadata as provided in the application schema. This specification does not prescribe a specific required level of positional accuracy.
 
@@ -32,4 +32,4 @@ However, positional accuracy must be evaluated and must be indicated in dataset 
 
 Lineage and process step information elements are not required to be present in S-201 datasets distributed to end user. They may be included as extra metadata in exchange sets distributed to vendors and distributors.
 
-Required source information about S-201 datasets is limited to the source and distribution information contained in discovery metadata described in S-100 Part 4a and Section 12 of this product specification.
+Required source information about S-201 datasets is limited to the source and distribution information contained in discovery metadata described in <<IHOS100,part=4a>> and <<cls-12>> of this product specification.

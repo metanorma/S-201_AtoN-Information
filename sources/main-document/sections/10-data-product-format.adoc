@@ -2,16 +2,11 @@
 
 === Introduction
 
-The GML encoding of S-201 datasets is based on the S-100 profile of GML 3.2.1. This is described in S-100 Edition 5.2.0 Part 10b.
+The GML encoding of S-201 datasets is based on the S-100 profile of GML 3.2.1. This is described in <<IHOS100,part=10b>>.
 
-[cols="1,3",options="header"]
-|===
-| Item | Value
+Format Name: GML, Specification: S-100 profile of GML Part 10b
 
-h| Format Name | GML
-h| Specification | S-100 profile of GML Part 10b
-h| File Name | S-201 Data Product Format Schemas - Annex B
-|===
+File Name: S-201 Data Product Format Schemas - Annex B
 
 === Encoding of Latitude and Longitude
 
@@ -25,7 +20,7 @@ The decimal point must be indicated by the "." character.
 
 Trailing zeroes after the decimal point (and the decimal point itself if appropriate) may be omitted at producer discretion, but the accuracy must still be as indicated (e.g., 10^-7^ degrees for coordinates of default accuracy).
 
-Latitude and longitude multiplication factors held in the Dataset Structure Information field under [coordMultFactorX] and [coordMultFactorY] must be set to a value corresponding to the encoding, e.g., {1} for coordinates encoded in decimal degrees.
+Latitude and longitude multiplication factors held in the Dataset Structure Information field under [`coordMultFactorX`] and [`coordMultFactorY`] must be set to a value corresponding to the encoding, e.g., {1} for coordinates encoded in decimal degrees.
 
 Example: A longitude = 42.0000 is converted into X = longitude * coordMultFactorX = 42.0000 * 1 = 42.0000000.
 
@@ -80,13 +75,13 @@ The order of data objects in each dataset file is described below:
 ** Surface
 * Information objects
 * Feature objects (Geometry may be encoded inline or by reference.)
-* Meta features
-* Geo features
+** Meta features
+** Geo features
 * S-201 Collection objects
 
 === Object identifiers
 
-Features, information types, collection objects, meta features, and geometries (inline or by reference) are all required by the schema to have a gml:id attribute with a value that is unique within the dataset. The gml:id values must be used as the reference for the object from another object in the same dataset or another dataset.
+Features, information types, collection objects, meta features, and geometries (inline or by reference) are all required by the schema to have a *gml:id* attribute with a value that is unique within the dataset. The *gml:id* values must be used as the reference for the object from another object in the same dataset or another dataset.
 
 All geographic feature classes in S-201 have the idCode attribute. This attribute shall be used to hold the Maritime Resource Name (MRN) identifier for the feature instance.
 
@@ -100,7 +95,7 @@ All areas of a dataset must be covered by a DataCoverage meta feature.
 
 === Data overlap
 
-S-201 datasets must not overlap other S-201 datasets, except as addressed in Clause 4.7.
+S-201 datasets must not overlap other S-201 datasets, except as addressed in <<cls-4.7>>.
 
 === Data quality
 
