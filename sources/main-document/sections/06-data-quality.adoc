@@ -18,9 +18,9 @@ The detailed results of applying compliance checks listed in S-158:100 are not r
 
 S-201 product specification follows the Category 3 in the S-100 compliancy categories considering the followings
 
-. The Product Specification contains an object model which is available as a Feature Catalogue from the IHO S-100 GI Registry and is compliant with the S-100 spatial model
-. The Product Specification adheres to the minimum requirements of S-100 Part 11. The Product Specification specifies which of the S-100 Part 10 encoding methods is used. Metadata is according to <<IHOS100,part=4>>, a profile of Part 4 or an extension according to Part 4 rules.
-. The Product Specification uses only an encoding method defined in <<IHOS100,part=10>>.
+* The Product Specification contains an object model which is available as a Feature Catalogue from the IHO S-100 GI Registry and is compliant with the S-100 spatial model
+* The Product Specification adheres to the minimum requirements of <<IHOS100,part=11>>. The Product Specification specifies which of the <<IHOS100,part=10>> encoding methods is used. Metadata is according to <<IHOS100,part=4>>, a profile of Part 4 or an extension according to Part 4 rules.
+* The Product Specification uses only an encoding method defined in <<IHOS100,part=10>>.
 
 === Positional accuracy
 
