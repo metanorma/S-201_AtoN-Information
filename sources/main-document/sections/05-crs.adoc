@@ -16,10 +16,10 @@ Vertical datum shall be selected from the list in verticalDatum enumeration. If 
 
 Units of measure for S-201 datasets must be as follows:
 
-For height, depth and vertical length it must be metres. +
-For range it must be nautical miles. +
-For orientation it must be degrees. +
-For signal duration it must be seconds. +
-For audible signal output it must be decibel. +
-For signal frequency it must be Hertz. +
-For intensity of light it must be candela.
+* For height, depth and vertical length it must be metres.
+* For range it must be nautical miles.
+* For orientation it must be degrees.
+* For signal duration it must be seconds.
+* For audible signal output it must be decibel.
+* For signal frequency it must be Hertz.
+* For intensity of light it must be candela.

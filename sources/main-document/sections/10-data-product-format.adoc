@@ -4,9 +4,9 @@
 
 The GML encoding of S-201 datasets is based on the S-100 profile of GML 3.2.1. This is described in <<IHOS100,part=10b>>.
 
-Format Name: GML, Specification: S-100 profile of GML Part 10b
+Format Name: GML, Specification: S-100 profile of GML Part 10b.
 
-File Name: S-201 Data Product Format Schemas - Annex B
+File Name: S-201 Data Product Format Schemas - Annex B.
 
 === Encoding of Latitude and Longitude
 
@@ -51,7 +51,7 @@ Optional attributes must be omitted altogether if the value is unknown or missin
 
 Example: An isolated danger beacon feature has unknown color (mandatory attribute) and condition (optional attribute). The feature could be coded as:
 
-[source,xml]
+[source%unnumbered,xml]
 ----
 <BeaconIsolatedDanger>
   <beaconShape>beacon tower</beaconShape>

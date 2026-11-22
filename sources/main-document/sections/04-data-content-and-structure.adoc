@@ -32,75 +32,76 @@ An overview of the application schema is provided in <<fig1>>. <<fig2;to!fig9>> 
 
 [[fig1]]
 .Overview of Application Schema
-image::figure-1.png[Overview of Application Schema]
+image::figure-1.png[width=700]
 
 [[fig2]]
 .Structure Feature types
-image::figure-2.png[Structure Feature types]
+image::figure-2.png[width=700]
 
 [%portrait]
 <<<
 
 [[fig3]]
 .Equipment Feature types
-image::figure-3.png[Equipment Feature types]
+image::figure-3.png[]
 
 [[fig4]]
 .AIS Aids to Navigation
-image::figure-4.png[AIS Aids to Navigation]
+image::figure-4.png[]
 
 [[fig5]]
 .Power source
-image::figure-5.png[Power source]
+image::figure-5.png[]
 
 [[fig6]]
 .AtoN fixing methods
-image::figure-6.png[AtoN fixing methods]
+image::figure-6.png[]
 
 [[fig7]]
 .Mooring buoy & emergency wreck buoy
-image::figure-7.png[Mooring buoy & emergency wreck buoy]
+image::figure-7.png[]
 
 [[fig8]]
 .Moorings
-image::figure-8.png[Moorings]
+image::figure-8.png[]
 
 [%landscape]
 <<<
 
 [[fig9]]
 .Complex attributes
-image::figure-9.png[Complex attributes]
+image::figure-9.png[width=700]
 
 [%portrait]
 <<<
 
 [[fig10]]
 .Enumerations – Aton change details
-image::figure-10.png[Enumerations – Aton change details]
+image::figure-10.png[]
 
 [[fig11]]
 .Enumerations – Categories
-image::figure-11.png[Enumerations – Categories]
+image::figure-11.png[]
 
 [[fig12]]
 .Enumerations – Colour, characteristics, and shape enumerated attributes
-image::figure-12.png[Enumerations – Colour, characteristics, and shape enumerated attributes]
+image::figure-12.png[width=700]
 
 [[fig13]]
 .Enumerations - Other enumerated attributes
-image::figure-13.png[Enumerations - Other enumerated attributes]
+image::figure-13.png[]
 
 [[fig14]]
 .Spatial Attributes
-image::figure-14.png[Spatial Attributes]
+image::figure-14.png[]
 
 === Meta features application schema
 
 Meta features include data coverage, data quality, datums and areas with established characteristics for navigational systems of marks (buoyage direction and system of marks). The application schema for meta features is depicted in <<fig15>>.
 
+[[fig15]]
 .Meta features application schema
-image::figure-15.png[Meta features application schema]
+image::figure-15.png[]
 
 === Feature Catalogue
 

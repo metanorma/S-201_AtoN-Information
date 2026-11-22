@@ -64,9 +64,7 @@ Datasets should not exceed 50 MB.
 
 Dataset files shall be named
 
-----
 201CCCCXXXXXXXX_EEE.GML
-----
 
 The file name forms a unique identifier where:
 
@@ -94,9 +92,7 @@ All support files must have unique universal file identifiers. The file identifi
 
 In this encoding the support files are named according to the specifications given below:
 
-----
 201CCCCXXXXXXXX.EEE
-----
 
 The main part forms an identifier where:
 
@@ -118,6 +114,6 @@ Support files should be stored in a separate folder within the exchange set.
 
 === Exchange Catalogue
 
-The exchange catalogue acts as the table of contents for the exchange set. The catalogue file of the exchange set must be named CATALOG.XML. No other file in the exchange set may be named CATALOG.XML. The contents of the exchange catalogue are described in S-100 Part 17.
+The exchange catalogue acts as the table of contents for the exchange set. The catalogue file of the exchange set must be named CATALOG.XML. No other file in the exchange set may be named CATALOG.XML. The contents of the exchange catalogue are described in <<IHOS100,part=17>>.
 
 XML schemas for the exchange catalogue are located at http://registry.iho.int/
