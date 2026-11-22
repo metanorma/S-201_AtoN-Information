@@ -1,26 +1,133 @@
 [.preface]
-== Document Revisions
+== metanorma-extension
+
+=== document history
 
 Revisions to the IALA Document are to be noted in the table prior to the issue of a revised document.
 
-|===
-| Date | Page / Section Revised | Requirement for Revision
-
-| 03/03/2016 | Various | See comments table 20160127
-| 09/03/2016 | Section 7.6 Geometry | Remove square brackets from S-201
-| 09/03/2016 | Section 8.2 Data Compliance | S-58 replaces Annex H for consistency
-| 09/03/2016 | Section 12.1 Encoding | Indicate conformity with S-100
-| 09/03/2016 | Section 11 Portrayal | Removed (not required)
-| 04/07/2016 | Various | FTA proposals
-| 21/09/2016 | Various | Reviewed at ENAV 19
-| 26/11/2016 | Various | Updated various sections and figures following data model update
-| 31/01/2017 | Various | Changed precision of lat/long, added units, various editorial changes
-| 15/08/2017 | Various | Partial implementation of TG1 July 2017 report. Aligned metadata and dataset identification with S-100 Edition 3.0.0, included AIS AtoNs and base station (Radio Station), minor clarifications for file names and support files.
-| 31/09/2019 | Various | Updating specification to S-100 v4.0.0 and various edits following review at IALA ARM9.
-| 19/03/2022 | Various | Improved application schema, updating specification to S-100 Ed.5.0.0
-| 02/09/2022 | Various | Updated various sections and figures following data model update
-| 28/03/2025 | Various | Updated data model
-| 03/04/2025 | Various | IALA WG2 updated whole document
-| 28/04/2025 | Various | Updating specification to various edits following review at IALA ARM members
-| 19/05/2025 | Various | Updating specification to various edits following review at IALA ARM members
-|===
+[source,yaml]
+----
+- date:
+  - type: updated
+    value: 2016-03-03
+  amend:
+    - location:
+        - whole
+      description: See comments table 20160127
+- date:
+  - type: updated
+    value: 2016-03-09
+  amend:
+    - location:
+        - section=7.6
+        - title="Geometry"
+      description: Remove square brackets from S-201
+- date:
+  - type: updated
+    value: 2016-03-09
+  amend:
+    - location:
+        - section=8.2
+        - title="Data Compliance"
+      description: S-58 replaces Annex H for consistency
+- date:
+  - type: updated
+    value: 2016-03-09
+  amend:
+    - location:
+        - section=12.1
+        - title="Encoding"
+      description: Indicate conformity with S-100
+- date:
+  - type: updated
+    value: 2016-03-09
+  amend:
+    - location:
+        - section=11
+        - title="Portrayal"
+      description: Removed (not required)
+- date:
+  - type: updated
+    value: 2016-07-04
+  amend:
+    - location:
+        - whole
+      description: FTA proposals
+- date:
+  - type: updated
+    value: 2016-09-21
+  amend:
+    - location:
+        - whole
+      description: Reviewed at ENAV 19
+- date:
+  - type: updated
+    value: 2016-11-26
+  amend:
+    - location:
+        - whole
+      description: Updated various sections and figures following data model update
+- date:
+  - type: updated
+    value: 2017-01-31
+  amend:
+    - location:
+        - whole
+      description: Changed precision of lat/long, added units, various editorial changes
+- date:
+  - type: updated
+    value: 2017-08-15
+  amend:
+    - location:
+        - whole
+      description: Partial implementation of TG1 July 2017 report. Aligned metadata and dataset identification with S-100 Edition 3.0.0, included AIS AtoNs and base station (Radio Station), minor clarifications for file names and support files.
+- date:
+  - type: updated
+    value: 2019-09-30
+  amend:
+    - location:
+        - whole
+      description: Updating specification to S-100 v4.0.0 and various edits following review at IALA ARM9.
+- date:
+  - type: updated
+    value: 2022-03-19
+  amend:
+    - location:
+        - whole
+      description: Improved application schema, updating specification to S-100 Ed.5.0.0
+- date:
+  - type: updated
+    value: 2022-09-02
+  amend:
+    - location:
+        - whole
+      description: Updated various sections and figures following data model update
+- date:
+  - type: updated
+    value: 2025-03-28
+  amend:
+    - location:
+        - whole
+      description: Updated data model
+- date:
+  - type: updated
+    value: 2025-04-03
+  amend:
+    - location:
+        - whole
+      description: IALA WG2 updated whole document
+- date:
+  - type: updated
+    value: 2025-04-28
+  amend:
+    - location:
+        - whole
+      description: Updating specification to various edits following review at IALA ARM members
+- date:
+  - type: updated
+    value: 2025-05-19
+  amend:
+    - location:
+        - whole
+      description: Updating specification to various edits following review at IALA ARM members
+----
