@@ -1,0 +1,57 @@
+[[annex-feature-catalogue]]
+:appendix-caption: Annex
+[appendix]
+== Feature catalogue
+
+This annex renders the S-201 Feature Catalogue directly from its
+S-100FC instance document (`schema/S-201_Feature_Catalogue.xml`) against
+the published S-100 Feature Catalogue schema (`schema/S100FC.xsd`). The
+content is not maintained in this document: the catalogue file is the
+source of record, and this annex is its rendering.
+
+[lutaml_data,schema/S100FC.xsd,schema/S-201_Feature_Catalogue.xml,catalogue]
+----
+{% assign cat = catalogue.CTS100FCFeatureCatalogue %}
+
+=== Feature types
+
+{% for ft in cat.s100_fc_feature_types.s100_fc_feature_type %}
+==== {{ ft.name }} ({{ ft.code }})
+
+{{ ft.definition }}
+
+[cols="1,1",options="header"]
+|===
+|Attribute |Multiplicity
+
+{% for b in ft.attribute_binding %}
+|{{ b.attribute.ref }} |{{ b.multiplicity.lower }}..{% if b.multiplicity.upper.infinite %}&#42;{% else %}{{ b.multiplicity.upper.content }}{% endif %}
+
+{% endfor %}
+|===
+
+{% endfor %}
+
+=== Attribute dictionary
+
+{% for a in cat.s100_fc_simple_attributes.s100_fc_simple_attribute %}
+==== {{ a.name }} ({{ a.code }})
+
+{{ a.definition }}
+
+Value type: {{ a.value_type }}
+
+{% if a.listed_values %}
+[cols="1,2,1",options="header"]
+|===
+|Code |Label |Definition
+
+{% for lv in a.listed_values.listed_value %}
+|{{ lv.code }} |{{ lv.label }} |{{ lv.definition }}
+
+{% endfor %}
+|===
+{% endif %}
+
+{% endfor %}
+----
