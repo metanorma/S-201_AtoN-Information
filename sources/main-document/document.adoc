@@ -49,3 +49,5 @@ include::sections/10-data-product-format.adoc[]
 include::sections/11-data-product-delivery.adoc[]
 
 include::sections/12-metadata.adoc[]
+
+include::sections/annex-c-feature-catalogue.adoc[]
