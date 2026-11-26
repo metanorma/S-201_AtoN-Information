@@ -1,14 +1,10 @@
 == Data Product Delivery
 
-<<<<<<< HEAD
+=== Introduction
+
 This clause specifies the encoding and delivery mechanisms for an S-201 dataset. Data
 which conforms to this product specification must be delivered by means of an exchange
 set.
-=======
-=== Introduction
-
-This clause specifies the encoding and delivery mechanisms for an S-201 dataset. Data which conforms to this product specification must be delivered by means of an exchange set.
->>>>>>> 39d4af2 (Pin the document URN and re-encode untitled tables per the S-102 contract)
 
 [[tab-data-product-delivery]]
 .Data product delivery
@@ -33,12 +29,9 @@ support files.
 *Units of Delivery*:: Exchange Set
 *Transfer Size*:: Unlimited
 *Medium Name*:: Digital data delivery
-<<<<<<< HEAD
 
 Each dataset must be contained in a physically separate, uniquely identified file on the
 transfer medium.
-=======
->>>>>>> 39d4af2 (Pin the document URN and re-encode untitled tables per the S-102 contract)
 
 Each exchange set has a single exchange catalogue which contains the discovery metadata
 for each dataset and references to any support files.
